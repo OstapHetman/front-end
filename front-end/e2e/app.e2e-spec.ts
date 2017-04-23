@@ -1,10 +1,10 @@
-import { FrontEndPage } from './app.po';
+import { ANGULARProjPage } from './app.po';
 
-describe('front-end App', () => {
-  let page: FrontEndPage;
+describe('angular-proj App', () => {
+  let page: ANGULARProjPage;
 
   beforeEach(() => {
-    page = new FrontEndPage();
+    page = new ANGULARProjPage();
   });
 
   it('should display message saying app works', () => {
