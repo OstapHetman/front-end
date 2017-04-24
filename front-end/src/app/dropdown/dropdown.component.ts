@@ -5,9 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.css']
 })
-
-
-
 export class DropdownComponent implements OnInit {
 
   constructor() { }

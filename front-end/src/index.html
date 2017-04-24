@@ -7,7 +7,8 @@
     <base href="/">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <link href="../node_modules/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -15,20 +16,16 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
-                <app-header>
-                    <app-username></app-username>
-                    <app-dropdown></app-dropdown>
-                </app-header>
+            <div class="col">
+                <app-header></app-header>
                 <app-root>Loading...</app-root>
                 <app-footer></app-footer>
-            </div>
-        </div>
-    </div>
+            </div class="col">
+        </div class="row">
+    </div class="container">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 </html>
