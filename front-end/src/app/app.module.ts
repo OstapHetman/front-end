@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { AdministrationComponent } from './administration/administration.component';
+import { UsernameComponent } from './username/username.component';
 
 
 
@@ -20,7 +21,8 @@ import { AdministrationComponent } from './administration/administration.compone
     FooterComponent,
     HeaderComponent,
     ConfigurationComponent,
-    AdministrationComponent
+    AdministrationComponent,
+    UsernameComponent
   ],
   imports: [
     BrowserModule,
