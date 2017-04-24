@@ -1,0 +1,27 @@
+#box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+#box-component {
+    width: 20em;
+    height: 20em;
+    border: .05rem solid #FFA313;
+}
+
+.top {
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+.bottom {
+    padding: 10px 10px 0px 20px;
+    font-size: 1.2em;
+}
