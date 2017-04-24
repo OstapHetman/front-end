@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { AdministrationComponent } from './administration/administration.component';
 import { UsernameComponent } from './username/username.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 
 
@@ -22,7 +23,8 @@ import { UsernameComponent } from './username/username.component';
     HeaderComponent,
     ConfigurationComponent,
     AdministrationComponent,
-    UsernameComponent
+    UsernameComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
