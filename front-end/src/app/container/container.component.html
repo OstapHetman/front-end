@@ -1,8 +1,86 @@
+<popup #popup1>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmai3" class="col-sm-3 control-label">Scheduler Name:</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" name="email" [(ngModel)]="email" id="email" placeholder="Some Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmai3" class="col-sm-3 control-label">Description:</label>
+            <div class="col-sm-7">
+                <input type="password" class="form-control" name="password" [(ngModel)]="password" id="password" placeholder="Some description">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-group text-right">
+                <div class="col-sm-offset-1 col-sm-7">
+                    <label for="inputEmai3" class="col-sm-3 control-label">Options:</label>
+                    <div class="checkbox">
+                        <label>
+                <input type="checkbox" id="RequireLogin" name="RequireLogin"> Save and Email to Recipients
+                </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                <input type="checkbox" id="RequireLogin" name="RequireLogin"> Only Email To Recipients
+                </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmai3" class="col-sm-3 control-label">Email Language:</label>
+            <div class="col-sm-7">
+                <app-langbox></app-langbox>
+            </div>
+        </div>
+    </form>
+</popup>
+
+<popup #popup2>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmai3" class="col-sm-3 control-label">LDAP Name:</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" name="email" [(ngModel)]="email" id="email" placeholder="Some Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmai3" class="col-sm-3 control-label">Host(s):</label>
+            <div class="col-sm-7">
+                <input type="password" class="form-control" name="password" [(ngModel)]="password" id="password" placeholder="10.20.5.208, some.hosts.ua">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-group text-right">
+                <div class="col-sm-offset-1 col-sm-7">
+                    <label for="inputEmai3" class="col-sm-3 control-label">Auth Method:</label>
+                    <div class="checkbox">
+                        <label>
+                <input type="checkbox" id="RequireLogin" name="RequireLogin"> Anonymous
+                </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                <input type="checkbox" id="RequireLogin" name="RequireLogin"> Use Password
+                </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button>Upload</button>
+            <button>Some Logo</button>
+        </div>
+    </form>
+</popup>
+
 <div id="box-container">
     <div id="box-component">
         <div class="top">
             <p>Email Sheduler</p>
-            <i class="glyphicon glyphicon-cog"></i>
+            <button (click)="ClickButton()"><i class="glyphicon glyphicon-cog"></i></button>
         </div>
         <div class="bottom">
             <p>Status: ON</p>
@@ -12,7 +90,7 @@
     <div id="box-component">
         <div class="top">
             <p>Serves Configurators</p>
-            <i class="glyphicon glyphicon-cog"></i>
+            <button (click)="ClickAnotherButton()"><i class="glyphicon glyphicon-cog"></i></button>
         </div>
         <div class="bottom">
             <p>Status: OFF</p>

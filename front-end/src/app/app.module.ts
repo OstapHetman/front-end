@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule, MissingTranslationHandler } from 'ng2-translate';
 //import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import {PopupModule} from 'ng2-opd-popup';
 
 import { routes } from './app.router';
 import { AppComponent } from './app.component';
@@ -39,7 +40,8 @@ import { ContainerComponent } from './container/container.component';
     routes,
     [BrowserAnimationsModule],
     TranslateModule.forRoot(),
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    PopupModule.forRoot()
   ],
   exports: [
         TranslateModule
