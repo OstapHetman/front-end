@@ -20,6 +20,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { LangboxComponent } from './langbox/langbox.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ContainerComponent } from './container/container.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,13 +36,15 @@ import { ContainerComponent } from './container/container.component';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     FormsModule,
     HttpModule,
     routes,
     [BrowserAnimationsModule],
     TranslateModule.forRoot(),
     BsDropdownModule.forRoot(),
-    PopupModule.forRoot()
+    PopupModule.forRoot(),
+   
   ],
   exports: [
         TranslateModule

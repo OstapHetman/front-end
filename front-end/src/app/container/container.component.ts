@@ -1,14 +1,19 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 import {Popup} from 'ng2-opd-popup';
+import {FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-container',
   templateUrl: './container.component.html',
-  styleUrls: ['./container.component.css']
+  styleUrls: ['./container.component.css'],
+  
 })
-export class ContainerComponent implements OnInit {
 
-  constructor() { }
+export class ContainerComponent implements OnInit {
+ 
+
 @ViewChild('popup1') popup1: Popup;
 @ViewChild('popup2') popup2: Popup;
 
@@ -51,8 +56,16 @@ YourConfirmEvent(){
 YourCancelEvent(){
   alert('You cliked cancel');
 }
-
+//VALIDATION
+ registerForm: FormGroup;
+  form: FormGroup;
+  constructor(private fb: FormBuilder) {}
   ngOnInit() {
+    this.form = this.fb.group({
+      name: ['', Validators.pattern('[a-zA-Z-0-9- ]+')],
+      description: ['', Validators.pattern('[A-Z-0-9 .,!?:]+')]
+    });
+  }
+     
   }
 
-}
