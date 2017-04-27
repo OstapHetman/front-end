@@ -1,0 +1,7 @@
+#lang-btn button {
+    margin-left: 5px;
+}
+
+#lang-btn button:focus {
+    background-color: #FFA313;
+}
