@@ -4,14 +4,14 @@
             <label for="inputEmai3" class="col-sm-3 control-label">Scheduler Name:</label>
             <div class="col-sm-7">
                 <input type="text" class="form-control" formControlName="name" name="name" [(ngModel)]="name" id="name" placeholder="Some Name">
-                <p *ngIf="form.controls.name.errors">Please enter valid name: only A-Z symbols and numbers are allowed.</p>
+                <p *ngIf="form.controls.name.errors" class="alert alert-danger">Please enter valid name: only A-Z symbols and numbers are allowed.</p>
             </div>
         </div>
         <div class="form-group">
             <label for="inputEmai3" class="col-sm-3 control-label">Description:</label>
             <div class="col-sm-7">
-                <input type="text" class="form-control" formControlName="description" name="description" [(ngModel)]="description" id="description" placeholder="Some description">
-                <p *ngIf="form.controls.description.errors">Please enter valid description: A-Z symbols, numbers and following symbols “,”, “.”, “?”, “!”, “:” are allowed.”</p>
+                <input type="text" class="form-control" id="custom-color1" formControlName="description" name="description" [(ngModel)]="description" id="description" placeholder="Some description">
+                <p *ngIf="form.controls.description.errors" class="alert alert-danger">Please enter valid description: A-Z symbols, numbers and following symbols “,”, “.”, “?”, “!”, “:” are allowed.”</p>
             </div>
         </div>
         <div class="form-group">
