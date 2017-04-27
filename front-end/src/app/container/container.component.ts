@@ -8,7 +8,6 @@ import { ReactiveFormsModule } from '@angular/forms';
   selector: 'app-container',
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.css'],
-  
 })
 
 export class ContainerComponent implements OnInit {
@@ -63,7 +62,8 @@ YourCancelEvent(){
   ngOnInit() {
     this.form = this.fb.group({
       name: ['', Validators.pattern('[a-zA-Z-0-9- ]+')],
-      description: ['', Validators.pattern('[A-Z-0-9 .,!?:]+')]
+      description: ['', Validators.pattern('[A-Z-0-9 .,!?:]+')],
+      data: ['',Validators.minLength(2)]
     });
   }
      

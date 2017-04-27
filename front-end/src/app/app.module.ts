@@ -21,6 +21,15 @@ import { LangboxComponent } from './langbox/langbox.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ContainerComponent } from './container/container.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NKDatetimeModule } from 'ng2-datetime/ng2-datetime';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'jquery/dist/jquery.min.js';
+import 'bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css';
+import 'bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js';
+import 'bootstrap-timepicker/css/bootstrap-timepicker.min.css';
+import 'bootstrap-timepicker/js/bootstrap-timepicker.js';
+import { TimeSettingComponent } from './time-setting/time-setting.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +41,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     UsernameComponent,
     DropdownComponent,
     LangboxComponent,
-    ContainerComponent
+    ContainerComponent,
+    TimeSettingComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -44,6 +55,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     TranslateModule.forRoot(),
     BsDropdownModule.forRoot(),
     PopupModule.forRoot(),
+    NKDatetimeModule
    
   ],
   exports: [
