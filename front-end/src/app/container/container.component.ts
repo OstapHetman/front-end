@@ -64,7 +64,7 @@ YourCancelEvent(){
       name: ['', Validators.pattern('[a-zA-Z-0-9- ]+')],
       description: ['', Validators.pattern('[A-Z-0-9 .,!?:]+')],
       ldap: ['', Validators.pattern('[a-zA-Z-0-9- ]+')],
-      host: ['', Validators.pattern('[a-zA-Z-0-9- ]+')]
+      host: ['', Validators.pattern('[0-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9]')]
     });
   }
      
