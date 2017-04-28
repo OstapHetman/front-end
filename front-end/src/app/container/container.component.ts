@@ -2,6 +2,9 @@ import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 import {Popup} from 'ng2-opd-popup';
 import {FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NKDatetimeModule } from 'ng2-datetime/ng2-datetime';
+import {IMyOptions} from 'mydatepicker';
+import * as $ from 'jquery';
 
 
 @Component({
@@ -11,7 +14,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 })
 
 export class ContainerComponent implements OnInit {
- 
+ private myDatePickerOptions: IMyOptions = {
+        // other options...
+        dateFormat: 'dd.mm.yyyy',
+    };
+    // Initialized to specific date (09.10.2018).
+    private model: Object = { date: { year: 2018, month: 10, day: 9 } };
 
 @ViewChild('popup1') popup1: Popup;
 @ViewChild('popup2') popup2: Popup;
@@ -64,9 +72,11 @@ YourCancelEvent(){
       name: ['', Validators.pattern('[a-zA-Z-0-9- ]+')],
       description: ['', Validators.pattern('[A-Z-0-9 .,!?:]+')],
       ldap: ['', Validators.pattern('[a-zA-Z-0-9- ]+')],
-      host: ['', Validators.pattern('[0-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9]')]
+      host: ['', Validators.pattern('[0-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9]')],
+      data:['', Validators.minLength(1)]
     });
   }
-     
+
+
   }
 

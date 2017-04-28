@@ -7,6 +7,10 @@ import { TranslateModule, MissingTranslationHandler } from 'ng2-translate';
 //import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import {PopupModule} from 'ng2-opd-popup';
+import { NKDatetimeModule } from 'ng2-datetime/ng2-datetime';
+import { MyDatePickerModule } from 'mydatepicker';
+
+
 
 import { routes } from './app.router';
 import { AppComponent } from './app.component';
@@ -21,9 +25,15 @@ import { LangboxComponent } from './langbox/langbox.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ContainerComponent } from './container/container.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { TimeSettingComponent } from './time-setting/time-setting.component';
 
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'jquery/dist/jquery.min.js';
+import 'bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css';
+import 'bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js';
+import 'bootstrap-timepicker/css/bootstrap-timepicker.min.css';
+import 'bootstrap-timepicker/js/bootstrap-timepicker.js';
 
 
 
@@ -47,10 +57,12 @@ import { TimeSettingComponent } from './time-setting/time-setting.component';
     FormsModule,
     HttpModule,
     routes,
-    [BrowserAnimationsModule],
+    BrowserAnimationsModule,
     TranslateModule.forRoot(),
     BsDropdownModule.forRoot(),
     PopupModule.forRoot(),
+    NKDatetimeModule,
+    MyDatePickerModule 
    
    
   ],

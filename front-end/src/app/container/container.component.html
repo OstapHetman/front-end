@@ -20,13 +20,13 @@
                     <label for="inputEmai3" class="col-sm-3 control-label">Options:</label>
                     <div class="checkbox">
                         <label>
-                <input type="radio" id="RequireLogin" name="RequireLogin"> Save and Email to Recipients
-                </label>
+                            <input type="radio" id="RequireLogin" name="RequireLogin">Save and Email to Recipients
+                        </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                <input type="radio" id="RequireLogin" name="RequireLogin"> Only Email To Recipients
-                </label>
+                            <input type="radio" id="RequireLogin" name="RequireLogin">Only Email To Recipients
+                        </label>
                     </div>
                 </div>
             </div>
@@ -35,37 +35,39 @@
             <label for="inputEmai3" class="col-sm-3 control-label">Email Language:</label>
             <div class="col-sm-7">
                 <app-langbox></app-langbox>
+
+                <my-date-picker name="mydate" [options]="myDatePickerOptions" formControlName="data" [(ngModel)]="model" required></my-date-picker>
             </div>
         </div>
     </form>
 </popup>
 
 <popup #popup2>
-    <form class="form-horizontal" novalidate [formGroup]="form">
-        <div class="form-group">
-            <label for="inputEmai3" class="col-sm-3 control-label">LDAP Name:</label>
-            <div class="col-sm-7">
-                <input type="text" class="form-control" formControlName="ldap" name="text" [(ngModel)]="text" id="text" placeholder="Some Name">
-                <p *ngIf="form.controls.ldap.errors" class="alert alert-danger">Please enter valid name: only A-Z symbols and numbers are allowed.</p>
+    <form class=" form-horizontal " novalidate [formGroup]="form ">
+        <div class="form-group ">
+            <label for="inputEmai3 " class="col-sm-3 control-label ">LDAP Name:</label>
+            <div class="col-sm-7 ">
+                <input type="text " class="form-control" formControlName="ldap" name="ldap" id="ldap" placeholder="Some Name ">
+                <p *ngIf="form.controls.ldap.errors " class="alert alert-danger ">Please enter valid name: only A-Z symbols and numbers are allowed.</p>
             </div>
         </div>
-        <div class="form-group">
-            <label for="inputEmai3" class="col-sm-3 control-label">Host(s):</label>
-            <div class="col-sm-7">
-                <input type="text" class="form-control" formControlName="host" name="host" [(ngModel)]="host" id="host" placeholder="192.168.111.111, some.hosts.ua">
-                <p *ngIf="form.controls.host.errors" class="alert alert-danger">The address must be a hostname or an IP. The IP address must be 4 numbers separated by a period. Each number must be a value from 0 t0 255. (Example: 192.168.111.111) A hostname is a string that must mach the following rules: www.exaple.com</p>
+        <div class="form-group ">
+            <label for="inputEmai3 " class="col-sm-3 control-label ">Host(s):</label>
+            <div class="col-sm-7 ">
+                <input type="text " class="form-control" formControlName="host" name="host" id="host" placeholder="192.168.111.111, some.hosts.ua ">
+                <p *ngIf="form.controls.host.errors " class="alert alert-danger ">The address must be a hostname or an IP. The IP address must be 4 numbers separated by a period. Each number must be a value from 0 t0 255. (Example: 192.168.111.111) A hostname is a string that must mach the following rules: www.exaple.com</p>
             </div>
         </div>
-        <div class="form-group">
-            <div class="form-group text-right">
-                <div class="col-sm-offset-1 col-sm-7">
-                    <label for="inputEmai3" class="col-sm-3 control-label">Auth Method:</label>
+        <div class="form-group ">
+            <div class="form-group text-right ">
+                <div class="col-sm-offset-1 col-sm-7 ">
+                    <label for="inputEmai3 " class="col-sm-3 control-label ">Auth Method:</label>
                     <div class="radio">
                         <label>
                             <input type="radio" id="RequireLogin" name="RequireLogin"> Anonymous
                         </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio ">
                         <label>
                             <input type="radio" id="RequireLogin" name="RequireLogin"> Use Password
                         </label>
@@ -73,31 +75,31 @@
                 </div>
             </div>
         </div>
-        <div class="form-group">
-            <div class="fileinput fileinput-new col-sm-offset-1 col-sm-7" data-provides="fileinput">
-                <span class="btn btn-default btn-file"><input type="file" name="..."></span>
+        <div class="form-group ">
+            <div class="fileinput fileinput-new col-sm-offset-1 col-sm-7 " data-provides="fileinput ">
+                <span class="btn btn-default btn-file"><input type="file" name="... "></span>
                 <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 100px; height: 100px;"></div>
             </div>
         </div>
     </form>
 </popup>
-<div class="box-container">
-    <div class="box-component">
-        <div class="top">
+<div class="box-container ">
+    <div class="box-component ">
+        <div class="top ">
             <p>Email Sheduler</p>
-            <button (click)="ClickButton()"><i class="glyphicon glyphicon-cog"></i></button>
+            <i class="glyphicon glyphicon-cog " (click)="ClickButton()"></i>
         </div>
-        <div class="bottom">
+        <div class="bottom ">
             <p>Status: ON</p>
             <p>Sheduled emails: 10</p>
         </div>
     </div>
-    <div class="box-component">
-        <div class="top">
+    <div class="box-component ">
+        <div class="top ">
             <p>Serves Configurators</p>
-            <button (click)="ClickAnotherButton()"><i class="glyphicon glyphicon-cog"></i></button>
+            <i class="glyphicon glyphicon-cog " (click)="ClickAnotherButton()"></i>
         </div>
-        <div class="bottom">
+        <div class="bottom ">
             <p>Status: OFF</p>
             <p>Servers Configurated: 5</p>
         </div>
