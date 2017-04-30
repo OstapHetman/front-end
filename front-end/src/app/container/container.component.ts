@@ -19,7 +19,7 @@ export class ContainerComponent implements OnInit {
         dateFormat: 'dd.mm.yyyy',
     };
     // Initialized to specific date (09.10.2018).
-    private model: Object = { date: { year: 2018, month: 10, day: 9 } };
+    private model: Object = { date: { year: 2017, month: 10, day: 9 } };
 
 @ViewChild('popup1') popup1: Popup;
 @ViewChild('popup2') popup2: Popup;

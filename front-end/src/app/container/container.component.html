@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="inputEmai3" class="col-sm-3 control-label">Description:</label>
+            <label for="inputEmai3" class="col-sm-3 control-label" i18n>Description:</label>
             <div class="col-sm-7">
                 <input type="text" class="form-control" id="custom-color1" formControlName="description" name="description" [(ngModel)]="description" id="description" placeholder="Some description">
                 <p *ngIf="form.controls.description.errors" class="alert alert-danger">Please enter valid description: A-Z symbols, numbers and following symbols “,”, “.”, “?”, “!”, “:” are allowed.”</p>
@@ -17,7 +17,7 @@
         <div class="form-group">
             <div class="form-group text-right">
                 <div class="col-sm-offset-1 col-sm-7">
-                    <label for="inputEmai3" class="col-sm-3 control-label">Options:</label>
+                    <label for="inputEmai3" class="col-sm-3 control-label" i18n>Options:</label>
                     <div class="checkbox">
                         <label>
                             <input type="radio" id="RequireLogin" name="RequireLogin">Save and Email to Recipients
