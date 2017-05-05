@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdministrationComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    /** Constructor */
+  }
 
-  ngOnInit() {
+  public ngOnInit() {
+    /** Init */
   }
 
 }

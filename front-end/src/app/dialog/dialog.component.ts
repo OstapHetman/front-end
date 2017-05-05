@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MdDialog} from '@angular/material';
+import { MdDialog } from '@angular/material';
 
 @Component({
   selector: 'app-dialog',
@@ -7,13 +7,10 @@ import {MdDialog} from '@angular/material';
   styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent implements OnInit {
-
-  constructor(public dialog: MdDialog) { }
- openDialog() {
-    this.dialog.open(DialogOverviewExampleDialog);
+  constructor(public dialog: MdDialog) {}
+ public openDialog() {
+    // this.dialog.open(DialogOverviewExampleDialog);
   }
-  ngOnInit() {
-  }
-
+ public ngOnInit() { /** Init */ }
 }
-export class DialogOverviewExampleDialog {}
+// export class DialogOverviewExampleDialog {}
