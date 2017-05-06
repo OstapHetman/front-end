@@ -1,11 +1,12 @@
 <md-card class="example-form">
-    <form>
+    <form novalidate [formGroup]="form">
         <md-card-header>LDAP Configuration</md-card-header>
         <table class="example-full-width" cellspacing="5">
             <tr>
                 <td>
                     <md-input-container class="example-full-width">
-                        <input mdInput placeholder="LDAP Name:" id="some-name">
+                        <input mdInput placeholder="LDAP Name:" id="some-name" formControlName="ldap">
+                        <p *ngIf="form.controls.ldap.errors" class="alert alert-danger">Please enter valid name: only A-Z symbols and numbers are allowed.</p>
                     </md-input-container>
                 </td>
             </tr>
