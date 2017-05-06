@@ -4,15 +4,17 @@
         <table class="example-full-width" cellspacing="5">
             <tr>
                 <td>
-                    <md-input-container class="example-full-width">
-                        <input mdInput placeholder="Sheduler Name:" id="some-name">
+                    <md-input-container class="example-full-width" novalidate [formGroup]="form">
+                        <input mdInput placeholder="Sheduler Name:" id="some-name" formControlName="name">
+                        <p *ngIf="form.controls.name.errors" class="alert alert-danger">Please enter valid name: only A-Z symbols and numbers are allowed.</p>
                     </md-input-container>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <md-input-container class="example-full-width">
-                        <input mdInput placeholder="Description:" id="description">
+                    <md-input-container class="example-full-width" novalidate [formGroup]="form">
+                        <input mdInput placeholder="Description:" id="description" formControlName="description">
+                        <p *ngIf="form.controls.description.errors" class="alert alert-danger">Please enter valid description: A-Z symbols, numbers and following symbols “,”, “.”, “?”, “!”, “:” are allowed.”</p>
                     </md-input-container>
                 </td>
             </tr>

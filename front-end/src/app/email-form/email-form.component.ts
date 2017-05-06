@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { MdCardModule } from '@angular/material';
 import { MdInputModule } from '@angular/material';
 import { MdRadioModule } from '@angular/material';
@@ -10,11 +11,18 @@ import { MdButtonModule } from '@angular/material';
   templateUrl: './email-form.component.html',
   styleUrls: ['./email-form.component.css']
 })
-export class EmailFormComponent  {
+export class EmailFormComponent implements OnInit {
   public selectedValue: string;
-
   public langs = [
     { viewValue: 'English'},
     { viewValue: 'Ukrainian'}
   ];
+   public form: FormGroup;
+    constructor(private fb: FormBuilder) {}
+    public ngOnInit() {
+    this.form = this.fb.group({
+    name: ['', Validators.pattern('[a-zA-Z-0-9- ]+')],
+    description: ['', Validators.pattern('[A-Z-0-9 .,!?:]+')]
+    });
+  }
 }
