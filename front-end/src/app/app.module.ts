@@ -10,7 +10,6 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { MaterialModule } from '@angular/material';
 // import {TranslateModule} from '@ngx-translate/core';
 // import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-// import { PopupModule } from 'ng2-opd-popup';
 import { MyDatePickerModule } from 'mydatepicker';
 import { routes } from './app.router';
 import { AppComponent } from './app.component';
@@ -26,6 +25,7 @@ import { LangboxComponent } from './langbox/langbox.component';
 import { ContainerComponent } from './container/container.component';
 import { TimeSettingComponent } from './time-setting/time-setting.component';
 import 'jquery/dist/jquery.min.js';
+import { EmailFormComponent } from './email-form/email-form.component';
 // import 'bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css';
 // import 'bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js';
 // import 'bootstrap-timepicker/css/bootstrap-timepicker.min.css';
@@ -43,7 +43,8 @@ import 'jquery/dist/jquery.min.js';
       LangboxComponent,
       ContainerComponent,
       TimeSettingComponent,
-      DialogComponent
+      DialogComponent,
+      EmailFormComponent
   ],
   imports: [
       BrowserModule,
@@ -56,7 +57,6 @@ import 'jquery/dist/jquery.min.js';
       MaterialModule.forRoot(),
     // TranslateModule.forRoot(),
       BsDropdownModule.forRoot(),
-     // PopupModule.forRoot(),
       MyDatePickerModule
   ],
   exports: [

@@ -1,0 +1,48 @@
+<md-card class="example-form">
+    <form>
+        <md-card-header>Email Scheduler Settings</md-card-header>
+        <table class="example-full-width" cellspacing="5">
+            <tr>
+                <td>
+                    <md-input-container class="example-full-width">
+                        <input mdInput placeholder="Sheduler Name:" id="some-name">
+                    </md-input-container>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <md-input-container class="example-full-width">
+                        <input mdInput placeholder="Description:" id="description">
+                    </md-input-container>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="options">Options: </p>
+                    <md-radio-button value="1" aria-label="Save and Email to Receptiens">
+                        Save and Email to Receptiens
+                    </md-radio-button>
+                    <md-radio-button value="1" aria-label="Save and Email to Receptiens">
+                        Only Email to Receptiens
+                    </md-radio-button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="email-lang">Email language:
+                        <md-select placeholder="Select Language" [(ngModel)]="selectedValue" name="lang" id="select">
+                            <md-option *ngFor="let lang of langs" [value]="lang.value">
+                                {{lang.viewValue}}
+                            </md-option>
+                        </md-select>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td id="btn">
+                    <button md-raised-button id="save-btn">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</md-card>

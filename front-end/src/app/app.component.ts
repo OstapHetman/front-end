@@ -4,7 +4,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { Router, ActivatedRoute } from '@angular/router';
 import { OnInit, OnDestroy } from '@angular/core';
-import { Popup } from 'ng2-opd-popup';
+import { EmailFormComponent } from './email-form/email-form.component';
+import { MdDialog, MdDialogRef } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -12,13 +13,7 @@ import { Popup } from 'ng2-opd-popup';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  constructor() {/*initial*/}
 
-  constructor() {
-    /** Constructor */
-  }
-
-  public ngOnInit() {
-    /** Init */
-  }
-
+  public ngOnInit() {/*initial*/}
 }
