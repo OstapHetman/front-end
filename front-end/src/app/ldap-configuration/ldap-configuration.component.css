@@ -1,0 +1,26 @@
+.example-form {
+    max-width: 500px;
+    margin: auto;
+    border: 0.15em solid #FFA313;
+    max-height: auto;
+    min-height: 450px;
+}
+
+.example-full-width {
+    width: 90%;
+}
+
+md-card-header {
+    font-weight: bold;
+    font-size: 1.4em;
+    border-bottom: 0.15em solid #FFA313;
+}
+
+#btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#save-btn {
+    margin-top: 100px;
+}

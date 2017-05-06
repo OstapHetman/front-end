@@ -26,6 +26,7 @@ import { ContainerComponent } from './container/container.component';
 import { TimeSettingComponent } from './time-setting/time-setting.component';
 import 'jquery/dist/jquery.min.js';
 import { EmailFormComponent } from './email-form/email-form.component';
+import { LdapConfigurationComponent } from './ldap-configuration/ldap-configuration.component';
 // import 'bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css';
 // import 'bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js';
 // import 'bootstrap-timepicker/css/bootstrap-timepicker.min.css';
@@ -44,7 +45,8 @@ import { EmailFormComponent } from './email-form/email-form.component';
       ContainerComponent,
       TimeSettingComponent,
       DialogComponent,
-      EmailFormComponent
+      EmailFormComponent,
+      LdapConfigurationComponent
   ],
   imports: [
       BrowserModule,
