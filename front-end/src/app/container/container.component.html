@@ -2,7 +2,15 @@
     <div class="box-component ">
         <div class="top ">
             <p>Email Sheduler</p>
-            <app-dialog></app-dialog>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+            Modal1
+            </button>
+            <!-- Modal1 -->
+            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <email-form></email-form>
+                </div>
+            </div>
         </div>
         <div class="bottom ">
             <p>Status: ON</p>
@@ -12,7 +20,15 @@
     <div class="box-component ">
         <div class="top ">
             <p>Serves Configurators</p>
-            <app-dialog></app-dialog>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+            Modal2
+            </button>
+            <!-- Modal2 -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <ldap-configuration></ldap-configuration>
+                </div>
+            </div>
         </div>
         <div class="bottom ">
             <p>Status: OFF</p>
@@ -20,6 +36,3 @@
         </div>
     </div>
 </div>
-<email-form></email-form>
-<br>
-<ldap-configuration></ldap-configuration>
