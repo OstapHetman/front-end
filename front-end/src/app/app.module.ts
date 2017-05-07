@@ -13,7 +13,6 @@ import { MaterialModule } from '@angular/material';
 import { MyDatePickerModule } from 'mydatepicker';
 import { routes } from './app.router';
 import { AppComponent } from './app.component';
-import { DialogComponent } from './dialog/dialog.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
@@ -44,7 +43,6 @@ import { LdapConfigurationComponent } from './ldap-configuration/ldap-configurat
       LangboxComponent,
       ContainerComponent,
       TimeSettingComponent,
-      DialogComponent,
       EmailFormComponent,
       LdapConfigurationComponent
   ],
