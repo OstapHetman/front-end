@@ -12,14 +12,12 @@
 
 md-card-header {
     font-weight: bold;
-    font-size: 1.4em;
     border-bottom: 0.15em solid #FFA313;
 }
 
 #options,
 #email-lang {
     font-weight: bold;
-    font-size: 1.2em;
 }
 
 #select {
