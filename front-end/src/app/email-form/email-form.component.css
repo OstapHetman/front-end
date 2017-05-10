@@ -1,9 +1,9 @@
 .example-form {
-    max-width: 500px;
+    max-width: 50.000em;
     margin: auto;
     border: 0.15em solid #FFA313;
     max-height: auto;
-    min-height: 450px;
+    min-height: 45.000em;
 }
 
 .example-full-width {
@@ -21,8 +21,7 @@ md-card-header {
 }
 
 #select {
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 1.500em 0em 0em 1.500em;
 }
 
 #btn {
@@ -31,5 +30,5 @@ md-card-header {
 }
 
 #save-btn {
-    margin-top: 100px;
+    margin-top: 10em;
 }

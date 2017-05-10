@@ -8,14 +8,14 @@
 }
 
 .box-component {
-    margin: 10px;
+    margin: 1.000em;
     width: 20em;
     height: 20em;
     border: 0.15em solid #FFA313;
 }
 
 .top {
-    padding: 10px 10px 0px 10px;
+    padding: 1.000em 1.000em 0.000em 1.000em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -23,10 +23,10 @@
 }
 
 .bottom {
-    padding: 10px 10px 0px 20px;
+    padding: 1.000em 1.000em 0.000em 1.000em;
     font-size: 1.2em;
 }
 
 .ng-invalid:not(form) {
-    border: 2px solid #a94442;
+    border: 0.200em solid #a94442;
 }
