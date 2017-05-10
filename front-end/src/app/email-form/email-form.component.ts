@@ -17,7 +17,7 @@ export class EmailFormComponent implements OnInit {
     { viewValue: 'English'},
     { viewValue: 'Ukrainian'}
   ];
-   public form: FormGroup;
+     public form: FormGroup;
     constructor(private fb: FormBuilder) {}
     public ngOnInit() {
     this.form = this.fb.group({

@@ -25,6 +25,7 @@ import { ContainerComponent } from './container/container.component';
 import { TimeSettingComponent } from './time-setting/time-setting.component';
 import { EmailFormComponent } from './email-form/email-form.component';
 import { LdapConfigurationComponent } from './ldap-configuration/ldap-configuration.component';
+import { LanguageComponent } from './language/language.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { LdapConfigurationComponent } from './ldap-configuration/ldap-configurat
       ContainerComponent,
       TimeSettingComponent,
       EmailFormComponent,
-      LdapConfigurationComponent
+      LdapConfigurationComponent,
+      LanguageComponent
   ],
   imports: [
       BrowserModule,
