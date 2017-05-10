@@ -1,0 +1,15 @@
+$corporate_color: #FFA313;
+$footer_txt_color: #777;
+$border_weight: 0.15em;
+
+ footer {
+     padding-top: 1em;
+     margin-top: 5em;
+     color: $footer_txt_color;
+     border-top: $border_weight solid $corporate_color;
+ }
+ 
+ #softserve {
+     display: flex;
+     justify-content: center;
+ }

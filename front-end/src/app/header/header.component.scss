@@ -1,0 +1,34 @@
+$corporate_color: #FFA313;
+$nav_font: 1.4em;
+$nav_font_brand: 2em;
+$border_weight: 0.15em;
+$white: white;
+$black: black;
+
+.navbar-default {
+    background-color: $white;
+    border-bottom: $border_weight solid $corporate_color;
+    border-top: $white;
+    border-right: $white;
+    border-left: $white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: $black;
+    font-size: $nav_font;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    border-bottom: $border_weight solid $corporate_color;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    padding-bottom: 2.000em;
+}
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    font-size: $nav_font_brand;
+    color: $black;
+}

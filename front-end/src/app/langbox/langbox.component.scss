@@ -1,7 +1,9 @@
+$corporate_color: #FFA313;
+
 #lang-btn button {
     margin-left: 0.500em;
 }
 
 #lang-btn button:focus {
-    background-color: #FFA313;
+    background-color: $corporate_color;
 }

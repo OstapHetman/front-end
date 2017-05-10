@@ -9,7 +9,7 @@ import { MdButtonModule } from '@angular/material';
 @Component({
   selector: 'ldap-configuration',
   templateUrl: './ldap-configuration.component.html',
-  styleUrls: ['./ldap-configuration.component.css']
+  styleUrls: ['./ldap-configuration.component.scss']
 })
 export class LdapConfigurationComponent implements OnInit {
 

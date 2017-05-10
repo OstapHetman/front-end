@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-container',
   templateUrl: './container.component.html',
-  styleUrls: ['./container.component.css'],
+  styleUrls: ['./container.component.scss'],
 })
 
 export class ContainerComponent implements OnInit {

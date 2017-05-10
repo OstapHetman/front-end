@@ -1,3 +1,9 @@
+$corporate_color: #FFA313;
+$alarm_color: #a94442;
+$top_font_size: 1.5em;
+$bottom_font_size: 1.2em;
+$border_weight: 0.15em;
+
 .box-container {
     display: flex;
     flex-direction: row;
@@ -11,7 +17,7 @@
     margin: 1.000em;
     width: 20em;
     height: 20em;
-    border: 0.15em solid #FFA313;
+    border: $border_weight solid $corporate_color;
 }
 
 .top {
@@ -19,14 +25,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 1.5em;
+    font-size: $top_font_size;
 }
 
 .bottom {
     padding: 1.000em 1.000em 0.000em 1.000em;
-    font-size: 1.2em;
+    font-size: $bottom_font_size;
 }
 
 .ng-invalid:not(form) {
-    border: 0.200em solid #a94442;
+    border: $border_weight solid $alarm_color;
 }

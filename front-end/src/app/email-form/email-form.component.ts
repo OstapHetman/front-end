@@ -9,7 +9,7 @@ import { MdButtonModule } from '@angular/material';
 @Component({
   selector: 'email-form',
   templateUrl: './email-form.component.html',
-  styleUrls: ['./email-form.component.css']
+  styleUrls: ['./email-form.component.scss']
 })
 export class EmailFormComponent implements OnInit {
   public selectedValue: string;
