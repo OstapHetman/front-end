@@ -18,20 +18,20 @@ md-card-header {
     border-bottom: $border_weight solid $corporate_color;
 }
 
-#options,
-#email-lang {
+.options,
+.email-lang {
     font-weight: bold;
 }
 
-#select {
+.select {
     margin-top: 1.500em 0em 0em 1.500em;
 }
 
-#btn {
+.btn {
     display: flex;
     justify-content: flex-end;
 }
 
-#save-btn {
+.btn button {
     margin-top: 10em;
 }

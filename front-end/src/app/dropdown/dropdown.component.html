@@ -1,13 +1,11 @@
-<ul class="nav navbar-nav navbar-left">
-    <button md-icon-button [mdMenuTriggerFor]="menu">
-        <md-icon>account_circle</md-icon>
+<button md-icon-button [mdMenuTriggerFor]="menu">
+    <md-icon>account_circle</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+    <button md-menu-item routerLink="time-setting">
+        <span>Time settings</span>
     </button>
-    <md-menu #menu="mdMenu">
-        <button md-menu-item routerLink="time-setting">
-            <span>Time settings</span>
-        </button>
-        <button md-menu-item routerLink="language">
-             <span>Language</span>
-        </button>
-    </md-menu>
-</ul>
+    <button md-menu-item routerLink="language">
+         <span>Language</span>
+     </button>
+</md-menu>

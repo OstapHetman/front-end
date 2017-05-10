@@ -18,11 +18,11 @@ md-card-header {
     border-bottom: $border_weight solid $corporate_color;
 }
 
-#btn {
+.btn {
     display: flex;
     justify-content: flex-end;
 }
 
-#save-btn {
+.save-btn {
     margin-top: 10em;
 }
