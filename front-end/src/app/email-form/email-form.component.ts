@@ -37,4 +37,7 @@ export class EmailFormComponent implements OnInit {
     description: ['', Validators.pattern('[A-Z-0-9 .,!?:]+')]
     });
   }
+  public onSubmit() {
+    /* Init */
+  }
 }

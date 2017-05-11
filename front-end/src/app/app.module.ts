@@ -6,9 +6,9 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { MaterialModule } from '@angular/material';
 import { MyDatePickerModule } from 'mydatepicker';
+import { NgxErrorsModule } from '@ultimate/ngxerrors';
 // ROUTE
 import { routes } from './app.router';
 // COMPONENT
@@ -51,9 +51,9 @@ import { TimeSettingComponent } from './time-setting/time-setting.component';
       routes,
       BrowserAnimationsModule,
       MaterialModule.forRoot(),
-    // TranslateModule.forRoot(),
-      BsDropdownModule.forRoot(),
-      MyDatePickerModule
+      // TranslateModule.forRoot(),
+      MyDatePickerModule,
+      NgxErrorsModule
   ],
   exports: [
        // TranslateModule

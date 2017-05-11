@@ -4,17 +4,26 @@
         <table class="example-full-width" cellspacing="5">
             <tr>
                 <td>
-                    <md-input-container class="example-full-width" novalidate [formGroup]="form">
-                        <input mdInput placeholder="Sheduler Name:" id="some-name" formControlName="name">
-                        <p *ngIf="form.controls.name.errors" class="alert alert-danger">Please enter valid name: only A-Z symbols and numbers are allowed.</p>
+                    <md-input-container class="example-full-width" [formGroup]="form" (ngSubmit)="onSubmit()">
+                        <input mdInput placeholder="Sheduler Name:" formControlName="name">
+                        <div ngxErrors="name" #name="ngxErrors">
+                            <div ngxError="name" class="alert alert-danger" ngxError="pattern" [when]="['dirty']">
+                                Please enter valid name: only A-Z symbols and numbers are allowed.
+                            </div>
+                        </div>
                     </md-input-container>
+
                 </td>
             </tr>
             <tr>
                 <td>
-                    <md-input-container class="example-full-width" novalidate [formGroup]="form">
+                    <md-input-container class="example-full-width" [formGroup]="form" (ngSubmit)="onSubmit()">
                         <input mdInput placeholder="Description:" id="description" formControlName="description">
-                        <p *ngIf="form.controls.description.errors" class="alert alert-danger">Please enter valid description: A-Z symbols, numbers and following symbols “,”, “.”, “?”, “!”, “:” are allowed.”</p>
+                        <div ngxErrors="description" #description="ngxErrors">
+                            <div ngxError="description" class="alert alert-danger" ngxError="pattern" [when]="['dirty']">
+                                Please enter valid description: A-Z symbols, numbers and following symbols “,”, “.”, “?”, “!”, “:” are allowed.”
+                            </div>
+                        </div>
                     </md-input-container>
                 </td>
             </tr>

@@ -17,7 +17,13 @@ export class LdapConfigurationComponent implements OnInit {
     constructor(private fb: FormBuilder) {}
     public ngOnInit() {
     this.form = this.fb.group({
-       ldap: ['', Validators.pattern('[a-zA-Z-0-9- ]+')]
-    });
+       ldap:
+       ['', Validators.pattern('[a-zA-Z-0-9- ]+')],
+       description:
+       ['', Validators.pattern('\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}' +
+       +'(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b')]});
+  }
+  public onSubmit() {
+    /* Init */
   }
 }

@@ -1,19 +1,28 @@
 <md-card class="example-form">
-    <form novalidate [formGroup]="form">
+    <form>
         <md-card-header>LDAP Configuration</md-card-header>
         <table class="example-full-width" cellspacing="5">
             <tr>
                 <td>
-                    <md-input-container class="example-full-width">
-                        <input mdInput placeholder="LDAP Name:" id="some-name" formControlName="ldap">
-                        <p *ngIf="form.controls.ldap.errors" class="alert alert-danger">Please enter valid name: only A-Z symbols and numbers are allowed.</p>
+                    <md-input-container class="example-full-width" [formGroup]="form" (ngSubmit)="onSubmit()">
+                        <input mdInput placeholder="Sheduler Name:" formControlName="ldap">
+                        <div ngxErrors="ldap" #ldap="ngxErrors">
+                            <div ngxError="ldap" class="alert alert-danger" ngxError="pattern" [when]="['dirty']">
+                                Please enter valid name: only A-Z symbols and numbers are allowed.
+                            </div>
+                        </div>
                     </md-input-container>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <md-input-container class="example-full-width">
-                        <input mdInput placeholder="Host(s):" id="description">
+                    <md-input-container class="example-full-width" [formGroup]="form" (ngSubmit)="onSubmit()">
+                        <input mdInput placeholder="Host(s)" formControlName="description">
+                        <div ngxErrors="description" #ldap="ngxErrors">
+                            <div ngxError="description" class="alert alert-danger" ngxError="pattern" [when]="['dirty']">
+                                Please enter valid host.
+                            </div>
+                        </div>
                     </md-input-container>
                 </td>
             </tr>
