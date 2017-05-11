@@ -20,12 +20,20 @@
             <tr>
                 <td>
                     <p class="options">Auth Method: </p>
-                    <md-radio-button value="1" aria-label="Anonymous">
+                    <md-radio-button (change)="0" aria-label="Anonymous">
                         Anonymous
                     </md-radio-button>
-                    <md-radio-button value="1" aria-label="Use Password">
+                    <md-radio-button (change)="0" aria-label="Use Password" (click)="show=!show" #use>
                         Use Password
                     </md-radio-button>
+                    <div *ngIf="show">
+                        <md-input-container class="example-full-width" *ngIf="use.checked">
+                            <input mdInput placeholder="Username:" id="user">
+                        </md-input-container>
+                        <md-input-container class="example-full-width" *ngIf="use.checked">
+                            <input mdInput placeholder="Password:" id="passw">
+                        </md-input-container>
+                    </div>
                 </td>
             </tr>
             <tr>

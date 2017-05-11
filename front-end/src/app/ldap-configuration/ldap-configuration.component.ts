@@ -12,7 +12,7 @@ import { MdButtonModule } from '@angular/material';
   styleUrls: ['./ldap-configuration.component.scss']
 })
 export class LdapConfigurationComponent implements OnInit {
-
+    public show = false;
     public form: FormGroup;
     constructor(private fb: FormBuilder) {}
     public ngOnInit() {

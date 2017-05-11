@@ -1,12 +1,11 @@
 $corporate_color: #FFA313;
 $border_weight: 0.15em;
-
 .example-form {
     max-width: 50.000em;
     margin: auto;
     border: $border_weight solid $corporate_color;
     max-height: auto;
-    min-height: 45em;
+    min-height: 15.000em;
 }
 
 .example-full-width {
@@ -21,8 +20,5 @@ md-card-header {
 .btn {
     display: flex;
     justify-content: flex-end;
-}
-
-.save-btn {
-    margin-top: 10em;
+    margin-top: 5em;
 }

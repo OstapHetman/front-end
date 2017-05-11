@@ -1,12 +1,11 @@
 $corporate_color: #FFA313;
 $border_weight: 0.15em;
-
 .example-form {
     max-width: 50.000em;
     margin: auto;
     border: $border_weight solid $corporate_color;
     max-height: auto;
-    min-height: 45.000em;
+    min-height: 15.000em;
 }
 
 .example-full-width {
@@ -23,15 +22,12 @@ md-card-header {
     font-weight: bold;
 }
 
-.select {
-    margin-top: 1.500em 0em 0em 1.500em;
+.email-lang .select {
+    margin: 1.500em 0em 0em 1.500em;
 }
 
 .btn {
     display: flex;
     justify-content: flex-end;
-}
-
-.btn button {
-    margin-top: 10em;
+    margin-top: 5em;
 }
