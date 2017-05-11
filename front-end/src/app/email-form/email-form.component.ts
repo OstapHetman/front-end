@@ -5,6 +5,7 @@ import { MdInputModule } from '@angular/material';
 import { MdRadioModule } from '@angular/material';
 import { MdSelectModule } from '@angular/material';
 import { MdButtonModule } from '@angular/material';
+import { IMyOptions } from 'mydatepicker';
 
 @Component({
   selector: 'email-form',
@@ -12,6 +13,16 @@ import { MdButtonModule } from '@angular/material';
   styleUrls: ['./email-form.component.scss']
 })
 export class EmailFormComponent implements OnInit {
+    public myDatePickerOptions: IMyOptions = {
+        dateFormat: 'dd.mm.yyyy',
+    };
+    public model: Object = {
+      date:
+       { year: 2017,
+          month: 5,
+          day: 11
+        }
+       };
     public selectedValue: string;
     public langs;
     public form: FormGroup;

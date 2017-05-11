@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { MaterialModule } from '@angular/material';
+import { MyDatePickerModule } from 'mydatepicker';
 // ROUTE
 import { routes } from './app.router';
 // COMPONENT
@@ -51,7 +52,8 @@ import { TimeSettingComponent } from './time-setting/time-setting.component';
       BrowserAnimationsModule,
       MaterialModule.forRoot(),
     // TranslateModule.forRoot(),
-      BsDropdownModule.forRoot()
+      BsDropdownModule.forRoot(),
+      MyDatePickerModule
   ],
   exports: [
        // TranslateModule

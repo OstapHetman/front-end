@@ -6,6 +6,7 @@ $border_weight: 0.15em;
     border: $border_weight solid $corporate_color;
     max-height: auto;
     min-height: 15.000em;
+    position: absolute;
 }
 
 .example-full-width {
