@@ -1,0 +1,10 @@
+$weight: bold;
+$size: 1.3em;
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: $weight;
+    font-size: $size;
+}

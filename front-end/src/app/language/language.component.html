@@ -1,13 +1,9 @@
-<select #langSelect (change)="translate.use(langSelect.value)">
+<div>
+    <p>Select language</p>
+    <select #langSelect (change)="translate.use(langSelect.value)">
           <option *ngFor="let lang of translate.getLangs()" [value]="lang" 
           [selected]="lang === translate.currentLang">
             {{ lang }}
           </option>
-</select>
-<!--<form>
-    <md-select placeholder="Select language" name="lang" #langSelect (change)="translate.use(langSelect.value)">
-        <md-option *ngFor="let lang of translate.getLangs()" [value]="lang">
-            {{ lang }}
-        </md-option>
-    </md-select>
-</form>-->
+    </select>
+</div>
