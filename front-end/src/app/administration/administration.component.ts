@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from 'ng2-translate';
+import { MdCardModule } from '@angular/material';
+import { MdInputModule } from '@angular/material';
+import { MdSelectModule } from '@angular/material';
+import { MdButtonModule } from '@angular/material';
 
 @Component({
   selector: 'app-administration',

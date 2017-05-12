@@ -1,6 +1,7 @@
 $full-width: 100%;
 $size:1.4em;
 $weight: bold;
+$table-size: 1.3em;
 .container,
 p {
     display: flex;
@@ -14,6 +15,7 @@ p {
 
 ngx-datatable {
     width: $full-width;
+    font-size: $table-size;
 }
 
 .icons {

@@ -2,7 +2,7 @@
 <div class="container">
     <div style='float:left;width:75%'>
         <div class="icons">
-            <i class="material-icons" (click)="add()">add</i>
+            <i class="material-icons" data-toggle="modal" data-target="#AddUser">add</i>
             <i class="material-icons" (click)="update()">update</i>
             <i class="material-icons" (click)="remove()">delete</i>
         </div>
@@ -14,4 +14,10 @@
             <ngx-datatable-column name="status"></ngx-datatable-column>
         </ngx-datatable>
     </div>
+    <div class="modal fade" id="AddUser" tabindex="-10" role="dialog" aria-labelledby="AddUser">
+        <div class="modal-dialog" role="document">
+            <add-user></add-user>
+        </div>
+    </div>
+
 </div>

@@ -54,5 +54,14 @@
         "PASSWORD": "Password",
         "UPLOAD": "Upload",
         "SAVE": "Save"
+    },
+    "ADD-USER": {
+        "HEADER": "Add user",
+        "ALARM-NAME": " Please enter valid name: only A-Z symbols and numbers are allowed.",
+        "NAME": "Some name",
+        "ROLE": "Role",
+        "SELECT": "SELECT",
+        "UPLOAD": "Upload",
+        "SAVE": "Save"
     }
 }
