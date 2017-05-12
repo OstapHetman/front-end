@@ -1,0 +1,58 @@
+{
+    "HOME": {
+        "TITLE": "Hello Angular 2 with ngx-translate!",
+        "SELECT": "Change language"
+    },
+    "HEADER": {
+        "TITLE": "ITA CLOUD",
+        "SERVICE": "Service Configuration",
+        "ADMIN": "Administration",
+        "TIME": "Time settings",
+        "SELECT": "Language"
+    },
+    "FOOTER": {
+        "TITLE": "SoftServe ITA Cloud Configurator 2017"
+    },
+    "CONTAINER": {
+        "TITLE": {
+            "EMAIL": "Email Sheduler",
+            "SERVES": "Serves Configurators"
+        },
+        "STATUS": "Status:",
+        "ONOFF": {
+            "EMAIL": "ON",
+            "SERVES": "OFF"
+        },
+        "SERVERS": {
+            "EMAIL": "Sheduled emails:",
+            "SERVES": "Servers Configurated:"
+        }
+    },
+    "DIALOG1": {
+        "HEADER": "Email Scheduler Settings",
+        "NAME": "Name: ",
+        "ALARM": " Please enter valid description: A-Z symbols, numbers and following symbols",
+        "ALARM-NAME": " Please enter valid name: only A-Z symbols and numbers are allowed.",
+        "DESC": "Description: ",
+        "OPTION": "Options",
+        "SAVE-SEND": "Save and Email to Receptiens",
+        "ONLY-SEND": "Only Email to Receptiens",
+        "LANG": "Email language: ",
+        "SELECT": "Select language: ",
+        "BUTTON": "Save"
+    },
+    "DIALOG2": {
+        "HEADER": "LDAP Configuration",
+        "NAME": "Name: ",
+        "ALARM": " Please enter valid description: A-Z symbols, numbers and following symbols",
+        "ALARM-NAME": " Please enter valid name: only A-Z symbols and numbers are allowed.",
+        "HOST": "Host(s)",
+        "AUTH": "Auth Method: ",
+        "ANON": "Anonymous",
+        "USE-PASS": "Use password",
+        "USER": "User name: ",
+        "PASSWORD": "Password",
+        "UPLOAD": "Upload",
+        "SAVE": "Save"
+    }
+}

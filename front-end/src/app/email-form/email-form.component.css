@@ -1,0 +1,34 @@
+.example-form {
+    max-width: 50.000em;
+    margin: auto;
+    border: 0.15em solid #FFA313;
+    max-height: auto;
+    min-height: 45.000em;
+}
+
+.example-full-width {
+    width: 90%;
+}
+
+md-card-header {
+    font-weight: bold;
+    border-bottom: 0.15em solid #FFA313;
+}
+
+#options,
+#email-lang {
+    font-weight: bold;
+}
+
+#select {
+    margin-top: 1.500em 0em 0em 1.500em;
+}
+
+#btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#save-btn {
+    margin-top: 10em;
+}

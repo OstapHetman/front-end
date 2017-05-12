@@ -1,14 +1,14 @@
 <md-card class="example-form">
     <form>
-        <md-card-header>LDAP Configuration</md-card-header>
+        <md-card-header>{{ 'DIALOG2.HEADER' | translate }}</md-card-header>
         <table class="example-full-width" cellspacing="5">
             <tr>
                 <td>
                     <md-input-container class="example-full-width" [formGroup]="form" (ngSubmit)="onSubmit()">
-                        <input mdInput placeholder="Sheduler Name:" formControlName="ldap">
+                        <input mdInput placeholder="{{ 'DIALOG2.NAME' | translate }}" formControlName="ldap">
                         <div ngxErrors="ldap" #ldap="ngxErrors">
                             <div ngxError="ldap" class="alert alert-danger" ngxError="pattern" [when]="['dirty']">
-                                Please enter valid name: only A-Z symbols and numbers are allowed.
+                                {{ 'DIALOG2.ALARM-NAME' | translate }}
                             </div>
                         </div>
                     </md-input-container>
@@ -17,10 +17,10 @@
             <tr>
                 <td>
                     <md-input-container class="example-full-width" [formGroup]="form" (ngSubmit)="onSubmit()">
-                        <input mdInput placeholder="Host(s)" formControlName="description">
+                        <input mdInput placeholder="{{ 'DIALOG2.HOST' | translate }}" formControlName="description">
                         <div ngxErrors="description" #ldap="ngxErrors">
                             <div ngxError="description" class="alert alert-danger" ngxError="pattern" [when]="['dirty']">
-                                Please enter valid host.
+                                {{ 'DIALOG2.ALARM' | translate }}Please enter valid host.
                             </div>
                         </div>
                     </md-input-container>
@@ -28,31 +28,31 @@
             </tr>
             <tr>
                 <td>
-                    <p class="options">Auth Method: </p>
+                    <p class="options">{{ 'DIALOG2.AUTH' | translate }} </p>
                     <md-radio-button (change)="0" aria-label="Anonymous">
-                        Anonymous
+                        {{ 'DIALOG2.ANON' | translate }}
                     </md-radio-button>
                     <md-radio-button (change)="0" aria-label="Use Password" (click)="show=!show" #use>
-                        Use Password
+                        {{ 'DIALOG2.USE-PASS' | translate }}
                     </md-radio-button>
                     <div *ngIf="show">
                         <md-input-container class="example-full-width" *ngIf="use.checked">
-                            <input mdInput placeholder="Username:" id="user">
+                            <input mdInput placeholder="{{ 'DIALOG2.USER' | translate }}" id="user">
                         </md-input-container>
                         <md-input-container class="example-full-width" *ngIf="use.checked">
-                            <input mdInput placeholder="Password:" id="passw">
+                            <input mdInput placeholder="{{ 'DIALOG2.PASSWORD' | translate }}" id="passw">
                         </md-input-container>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button md-raised-button id="upload">Upload</button>
+                    <button md-raised-button id="upload">{{ 'DIALOG2.UPLOAD' | translate }}</button>
                 </td>
             </tr>
             <tr>
                 <td class="btn">
-                    <button md-raised-button id="save-btn">Save</button>
+                    <button md-raised-button id="save-btn">{{ 'DIALOG2.SAVE' | translate }}</button>
                 </td>
             </tr>
         </table>

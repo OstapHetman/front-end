@@ -7,13 +7,6 @@ import { MdMenuModule } from '@angular/material';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent implements OnInit {
-
-  constructor() {
-    /** Constructor */
-  }
-
-  public ngOnInit() {
-    /** Init */
-  }
-
+  constructor() {/*initial*/}
+  public ngOnInit() {/*initial*/}
 }

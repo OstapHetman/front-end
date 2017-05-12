@@ -1,7 +1,7 @@
 <div class="box-container">
     <div class="box-component">
         <div class="top ">
-            <p>Email Sheduler</p>
+            <p>{{ 'CONTAINER.TITLE.EMAIL' | translate }}</p>
             <i class="material-icons" data-toggle="modal" data-target="#ModalOpenEmailConf">settings</i>
             <!-- Modal1 -->
             <div class="modal fade" id="ModalOpenEmailConf" tabindex="-10" role="dialog" aria-labelledby="myModalLabel">
@@ -11,13 +11,13 @@
             </div>
         </div>
         <div class="bottom">
-            <p>Status: ON</p>
-            <p>Sheduled emails: 10</p>
+            <p>{{ 'CONTAINER.STATUS' | translate }}{{ 'CONTAINER.ONOFF.EMAIL' | translate }}</p>
+            <p>{{ 'CONTAINER.SERVERS.EMAIL' | translate }} 10</p>
         </div>
     </div>
     <div class="box-component">
         <div class="top ">
-            <p>Serves Configurators</p>
+            <p>{{ 'CONTAINER.TITLE.SERVES' | translate }}</p>
             <i class="material-icons" data-toggle="modal" data-target="#ModalOpenLdapConf">settings</i>
             <!-- Modal2 -->
             <div class="modal fade" id="ModalOpenLdapConf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -27,8 +27,8 @@
             </div>
         </div>
         <div class="bottom">
-            <p>Status: OFF</p>
-            <p>Servers Configurated: 5</p>
+            <p>{{ 'CONTAINER.STATUS' | translate }}{{ 'CONTAINER.ONOFF.SERVES' | translate }}</p>
+            <p>{{ 'CONTAINER.SERVERS.SERVES' | translate }} 5</p>
         </div>
     </div>
 </div>

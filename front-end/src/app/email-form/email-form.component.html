@@ -1,14 +1,14 @@
 <md-card class="example-form">
     <form>
-        <md-card-header>Email Scheduler Settings</md-card-header>
+        <md-card-header>{{ 'DIALOG1.HEADER' | translate }}</md-card-header>
         <table class="example-full-width" cellspacing="5">
             <tr>
                 <td>
                     <md-input-container class="example-full-width" [formGroup]="form" (ngSubmit)="onSubmit()">
-                        <input mdInput placeholder="Sheduler Name:" formControlName="name">
+                        <input mdInput placeholder="{{ 'DIALOG1.NAME' | translate }}" formControlName="name">
                         <div ngxErrors="name" #name="ngxErrors">
                             <div ngxError="name" class="alert alert-danger" ngxError="pattern" [when]="['dirty']">
-                                Please enter valid name: only A-Z symbols and numbers are allowed.
+                                Please enter valid name: only A-Z symbols and numbers are allowed. {{ 'DIALOG1.ALARM-NAME' | translate }}
                             </div>
                         </div>
                     </md-input-container>
@@ -18,10 +18,10 @@
             <tr>
                 <td>
                     <md-input-container class="example-full-width" [formGroup]="form" (ngSubmit)="onSubmit()">
-                        <input mdInput placeholder="Description:" id="description" formControlName="description">
+                        <input mdInput placeholder="{{ 'DIALOG1.DESC' | translate }}" id="description" formControlName="description">
                         <div ngxErrors="description" #description="ngxErrors">
                             <div ngxError="description" class="alert alert-danger" ngxError="pattern" [when]="['dirty']">
-                                Please enter valid description: A-Z symbols, numbers and following symbols “,”, “.”, “?”, “!”, “:” are allowed.”
+                                {{ 'DIALOG1.ALARM' | translate }} “,”, “.”, “?”, “!”, “:”
                             </div>
                         </div>
                     </md-input-container>
@@ -29,19 +29,19 @@
             </tr>
             <tr>
                 <td>
-                    <p class="options">Options: </p>
+                    <p class="options">{{ 'DIALOG1.OPTION' | translate }} </p>
                     <md-radio-button value="1" aria-label="Save and Email to Receptiens">
-                        Save and Email to Receptiens
+                        {{ 'DIALOG1.SAVE-SEND' | translate }}
                     </md-radio-button>
                     <md-radio-button value="1" aria-label="Save and Email to Receptiens">
-                        Only Email to Receptiens
+                        {{ 'DIALOG1.ONLY-SEND' | translate }}
                     </md-radio-button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <p class="email-lang">Email language:
-                        <md-select placeholder="Select Language" [(ngModel)]="selectedValue" name="lang" class="select">
+                    <p class="email-lang">{{ 'DIALOG1.LANG' | translate }}
+                        <md-select placeholder="{{ 'DIALOG1.SELECT' | translate }}" [(ngModel)]="selectedValue" name="lang" class="select">
                             <md-option *ngFor="let lang of langs" [value]="lang.value">
                                 {{lang.viewValue}}
                             </md-option>
@@ -56,7 +56,7 @@
             </tr>
             <tr>
                 <td class="btn">
-                    <button md-raised-button>Save</button>
+                    <button md-raised-button>{{ 'DIALOG1.BUTTON' | translate }}</button>
                 </td>
             </tr>
         </table>

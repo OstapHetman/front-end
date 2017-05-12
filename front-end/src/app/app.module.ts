@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@angular/material';
 import { MyDatePickerModule } from 'mydatepicker';
 import { NgxErrorsModule } from '@ultimate/ngxerrors';
+import { TranslateModule } from 'ng2-translate';
 // ROUTE
 import { routes } from './app.router';
 // COMPONENT
@@ -51,12 +52,12 @@ import { TimeSettingComponent } from './time-setting/time-setting.component';
       routes,
       BrowserAnimationsModule,
       MaterialModule.forRoot(),
-      // TranslateModule.forRoot(),
+      TranslateModule.forRoot(),
       MyDatePickerModule,
       NgxErrorsModule
   ],
   exports: [
-       // TranslateModule
+      TranslateModule
     ],
   providers: [ ],
   bootstrap: [ AppComponent ]

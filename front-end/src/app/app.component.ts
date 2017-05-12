@@ -1,6 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-// import { TranslateService } from 'ng2-translate';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService } from 'ng2-translate';
 import { Subscription } from 'rxjs';
 import { Router, ActivatedRoute } from '@angular/router';
 import { OnInit, OnDestroy } from '@angular/core';
@@ -13,7 +12,12 @@ import { MdDialog, MdDialogRef } from '@angular/material';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor() {/*initial*/}
+  constructor(public translate: TranslateService) {/*initial*/}
 
-  public ngOnInit() {/*initial*/}
+  public ngOnInit() {
+        this.translate.addLangs(['en', 'ukr']);
+        this.translate.setDefaultLang('en');
+        const browserLang = this.translate.getBrowserLang();
+        this.translate.use(browserLang.match(/en|ukr/) ? browserLang : 'en');
+  }
 }
