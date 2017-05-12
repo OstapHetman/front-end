@@ -3,7 +3,6 @@
     <div style='float:left;width:75%'>
         <div class="icons">
             <i class="material-icons" data-toggle="modal" data-target="#AddUser">add</i>
-            <i class="material-icons" (click)="update()">update</i>
             <i class="material-icons" (click)="remove()">delete</i>
         </div>
         <ngx-datatable class="material" [rows]="rows" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'" [limit]="5" [selected]="selected" [selectionType]="'checkbox'" (activate)="onActivate($event)" (select)='onSelect($event)'>

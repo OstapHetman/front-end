@@ -1,0 +1,33 @@
+$corporate_color: #FFA313;
+$border_weight: 0.15em;
+.example-form {
+    max-width: 22.000em;
+    margin: auto;
+    border: $border_weight solid $corporate_color;
+    max-height: auto;
+    min-height: 10.000em;
+}
+
+.example-full-width {
+    width: 90%;
+}
+
+md-card-header {
+    font-weight: bold;
+    border-bottom: $border_weight solid $corporate_color;
+}
+
+.options,
+.email-lang {
+    font-weight: bold;
+}
+
+.email-lang .select {
+    margin: 1.500em 0em 0em 1.500em;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5em;
+}
