@@ -1,0 +1,22 @@
+$full-width: 100%;
+$size:1.4em;
+$weight: bold;
+.container,
+p {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+ngx-datatable {
+    width: $full-width;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}

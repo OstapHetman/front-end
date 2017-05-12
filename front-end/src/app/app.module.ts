@@ -10,6 +10,7 @@ import { MaterialModule } from '@angular/material';
 import { MyDatePickerModule } from 'mydatepicker';
 import { NgxErrorsModule } from '@ultimate/ngxerrors';
 import { TranslateModule } from 'ng2-translate';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 // ROUTE
 import { routes } from './app.router';
 // COMPONENT
@@ -54,7 +55,8 @@ import { TimeSettingComponent } from './time-setting/time-setting.component';
       MaterialModule.forRoot(),
       TranslateModule.forRoot(),
       MyDatePickerModule,
-      NgxErrorsModule
+      NgxErrorsModule,
+      NgxDatatableModule
   ],
   exports: [
       TranslateModule
