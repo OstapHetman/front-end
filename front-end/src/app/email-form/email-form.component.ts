@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  Inject, InjectionToken } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { MdCardModule } from '@angular/material';
 import { MdInputModule } from '@angular/material';
@@ -26,12 +26,17 @@ export class EmailFormComponent implements OnInit {
     public selectedValue: string;
     public langs;
     public form: FormGroup;
-    constructor(private fb: FormBuilder) {}
+     public FormBuilder = new InjectionToken<FormBuilder>('app.config');
+    constructor(@Inject(FormBuilder)private fb: FormBuilder) {}
     public ngOnInit() {
-    this.langs =  [
-       { value: 'eng', viewValue: 'English'},
-       { value: 'ukr', viewValue: 'Ukrainian'}
-    ];
+    this.langs =  [{
+      value: 'eng',
+      viewValue: 'English'
+    },
+    {
+      value: 'ukr',
+      viewValue: 'Ukrainian'
+    }];
     this.form = this.fb.group({
     name: ['', Validators.pattern('[a-zA-Z-0-9- ]+')],
     description: ['', Validators.pattern('[A-Z-0-9 .,!?:]+')]

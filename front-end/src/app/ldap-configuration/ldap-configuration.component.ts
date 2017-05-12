@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, InjectionToken } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { MdCardModule } from '@angular/material';
 import { MdInputModule } from '@angular/material';
@@ -14,7 +14,8 @@ import { MdButtonModule } from '@angular/material';
 export class LdapConfigurationComponent implements OnInit {
     public show = false;
     public form: FormGroup;
-    constructor(private fb: FormBuilder) {}
+    public FormBuilder = new InjectionToken<FormBuilder>('app.config');
+    constructor(@Inject(FormBuilder)private fb: FormBuilder) {}
     public ngOnInit() {
     this.form = this.fb.group({
        ldap:
